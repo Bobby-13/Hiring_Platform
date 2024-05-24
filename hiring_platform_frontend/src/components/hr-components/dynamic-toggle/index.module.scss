@@ -1,0 +1,20 @@
+@import "../../../stylesheets/variable.scss";
+@import "../../../stylesheets/mixins.scss";
+
+.dynamicToggle {
+  @include flex-gap(2rem);
+  & button {
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 0px 3px rgba(black, 0.7);
+    border-radius: 3px;
+    border: none;
+    background-color: $White;
+    cursor: pointer;
+  }
+  & .selected {
+    background-color: $Green-Button;
+    box-shadow: none;
+    color: $White;
+    border: none;
+  }
+}

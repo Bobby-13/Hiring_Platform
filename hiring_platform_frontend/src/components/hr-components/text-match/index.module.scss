@@ -1,0 +1,40 @@
+@import '../../../stylesheets/mixins.scss';
+@import '../../../stylesheets/variable.scss';
+
+%text-match {
+  & p:first-child {
+    font-size: 0.9rem;
+    color: $darkGrey;
+  }
+  font-size: 0.8rem;
+  & .assign {
+    color: $Green-Button;
+  }
+  & .pending {
+    color: $red;
+  }
+  & .values {
+    color: $lightGrey;
+  }
+}
+.content_box {
+  @include flex-column-align-gap(center, 1rem);
+  @extend %text-match;
+}
+
+.row {
+  @include flex-row-center(0.5rem, center);
+  @extend %text-match;
+  gap: 0.5rem;
+}
+
+.start {
+  @include flex-column-align-gap(flex-start, 0.8rem);
+}
+
+.radio_input_row {
+  @include flex-row-center(0.9rem, center);
+}
+.bt_component input{
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+.CreateContest {
+  width: 80%;
+  
+  
+}
+.CreateContestTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:30px;
+  
+}
+.Addrounds
+{
+ 
+  // width:70rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  
+}
+.AddRoundstitle
+{
+  font-size: 36px;
+}
+
+.CreateContestSubmitbutton{
+  width: 10rem;
+  height: 2rem;
+  font-size: 1rem;
+  float: right;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: rgb(65, 104, 210); 
+  color: #fff;
+}
+.TotalQuestionCount
+{
+  margin-top: 20px;
+  margin-left:14px;
+  display: flex;
+  gap:5rem;
+  
+}
+.min{
+  width: 3rem;
+  height: 2rem;
+  padding-left: 0.3rem;
+  font-size: 1rem;
+}

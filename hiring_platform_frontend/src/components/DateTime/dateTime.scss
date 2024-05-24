@@ -1,0 +1,8 @@
+@import "../../stylesheets/index.scss";
+.DateTime {
+  width: 18rem;
+  height: 4rem;
+  // border: 1px solid red;
+  @include Flex-Jcenter-Acenter();
+  gap: 5%;
+}

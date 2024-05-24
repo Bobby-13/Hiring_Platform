@@ -1,0 +1,68 @@
+.bg-container {
+  display: flex;
+  overflow: hidden;
+}
+.ContestNameTableContainer {
+    margin-top: 4rem;
+    display: flex;
+    margin-left: 28rem;
+    margin-top: 8rem;
+    
+    Table {
+      .ButtonIcon {
+        height: 2rem;
+        width: 2rem;
+        font-size: 1rem;
+        margin: 0.5rem;
+        border-radius: 8px;
+        color: white;
+        cursor: pointer;
+      }
+      
+    }
+
+  }
+  .table-with-buttons {
+    .start-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-right: 10px;
+  
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  
+    .view-button {
+      background-color: #2196F3;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #0b7dda;
+      }
+    }
+  }
+  .table-content{
+    margin-left: -12rem;
+    margin-top: -4rem;
+  }
+
+  .switching-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 20rem;
+    .swiching-content {
+      text-wrap: nowrap;
+      margin-left: -8rem;
+      margin-bottom: 2rem;
+      margin-top: 3rem;
+      display: flex;
+      gap: 92%;
+    }
+  }

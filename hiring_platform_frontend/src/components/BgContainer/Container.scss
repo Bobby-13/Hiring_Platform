@@ -1,0 +1,35 @@
+@import "../../stylesheets/index.scss";
+
+.Container {
+  background-color: $Secondary;
+
+  font-size: 2rem;
+  padding-top: 4rem;
+  height: 14rem;
+  width: 18rem;
+  border-radius: 0.8rem;
+  margin-left: 8rem;
+  margin-top: 7rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.roundsdata {
+  
+    color: #757575;
+    margin-top: -4rem;
+    padding-top:5rem
+}
+
+.startButton {
+  background-color: #333751;
+  color: #fff;
+  font-size: 1.2rem;
+  height: 3rem;
+  width: 18rem;
+  margin-top: 3rem;
+}
+
+.text {
+  margin-right: 3rem;
+  margin-top: 0rem;
+}

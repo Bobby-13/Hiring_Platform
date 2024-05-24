@@ -1,0 +1,31 @@
+@import "../../../../stylesheets/mixins.scss";
+@import "../../../../stylesheets/variable.scss";
+
+.hrassigned_detailed_view {
+  padding: 2rem;
+  @include flex-column-gap(3.5rem);
+  align-items: center;
+  h1,
+  h3 {
+    line-height: 0;
+    align-self: flex-start;
+  }
+  & h1 {
+    font-weight: 800;
+    font-size: 2.4rem;
+  }
+  & h3 {
+    color: $lightBlackText;
+    font-size: 1.5rem;
+  }
+  & .button {
+    align-self: flex-end;
+    display: flex;
+    & > button {
+      padding: 0.6rem 1rem;
+    }
+  }
+  & table {
+    width: 150%;
+  }
+}

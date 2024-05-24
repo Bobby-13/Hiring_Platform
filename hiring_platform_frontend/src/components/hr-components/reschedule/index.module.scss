@@ -1,0 +1,39 @@
+@import "../../../stylesheets/mixins.scss";
+@import "../../../stylesheets/variable.scss";
+
+.reschedule {
+  @include flex-column-gap(2rem);
+  &_header {
+    @include flex-column-gap(1.5rem);
+    & div:last-child {
+      align-self: flex-end;
+    }
+  }
+  .button_style {
+    align-self: flex-end;
+  }
+  &_requests {
+    box-shadow: 0 0 3px rgba($Black, 0.6);
+    border-radius: 0.5rem;
+    &_heading {
+      padding: 1rem;
+      border-bottom: 0.11rem solid rgba($lightGrey, 0.5);
+    }
+    &_hrreason {
+      padding: 1rem 0 2.5rem 1rem;
+      border-bottom: 0.11rem solid rgba($lightGrey, 0.5);
+    }
+    &_details {
+      padding: 1rem;
+      @include flex-row(center, space-between);
+      &_buttons {
+        @include flex-row-center(1.5rem, center);
+      }
+    }
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+  }
+  &_requests:hover {
+    box-shadow: 0 0 5px rgba($Black, 0.7);
+  }
+}

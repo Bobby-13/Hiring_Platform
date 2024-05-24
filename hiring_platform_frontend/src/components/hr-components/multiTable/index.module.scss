@@ -1,0 +1,38 @@
+@import "../../../stylesheets/styles";
+@import "../../../stylesheets/mixins.scss";
+
+.table_component {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 1;
+  border: 1px solid black;
+  border-radius: 5px;
+  thead {
+    background-color: black;
+    color: aliceblue;
+    & tr {
+      border-radius: 5px;
+    }
+    & > td {
+      width: 100%;
+    }
+  }
+  td {
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    height: 100%;
+    padding: 0.5rem;
+  }
+  tbody {
+    @include flex-column-gap(0.3rem);
+    padding: 0.2rem;
+    font-size: 14px;
+  }
+  tr {
+    @include flex-row-coordinate(center, space-between, 0.3rem);
+  }
+  td:hover {
+    background-color: rgba(0, 0, 0, 0.048);
+  }
+}

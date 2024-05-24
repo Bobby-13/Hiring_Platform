@@ -1,0 +1,103 @@
+@mixin NoStyle {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+@mixin Flex-Jcenter-Acenter($Flex-Direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $Flex-Direction;
+}
+
+
+@mixin Flex-Acenter($FD-value: row) {
+  display: flex;
+  align-items: center;
+  flex-direction: $FD-value;
+}
+
+@mixin Flex-Jcenter {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin Flex-Column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin Flex-JC($JC-Value) {
+  display: flex;
+  justify-content: $JC-Value;
+}
+
+@mixin Flex-AC($AC-Value) {
+  display: flex;
+  align-items: $AC-Value;
+}
+
+@mixin Flex-Acenter-J($J-value) {
+  display: flex;
+  justify-content: $J-value;
+  align-items: center;
+}
+@mixin Flex-Jcenter-A($A-value) {
+  display: flex;
+  justify-content: center;
+  align-items: $A-value;
+}
+
+//row
+@mixin flex-gap($gap) {
+  display: flex;
+  gap: $gap;
+}
+@mixin flex-justify-gap($justifyContent, $gap) {
+  display: flex;
+  justify-content: $justifyContent;
+  gap: $gap;
+}
+@mixin flex-row($alignItems, $justifyContent) {
+  display: flex;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}
+@mixin flex-row-coordinate($alignItems, $justifyContent, $gap) {
+  display: flex;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+  gap: $gap;
+}
+@mixin flex-row-center($gap, $alignItems) {
+  display: flex;
+  gap: $gap;
+  align-items: $alignItems;
+}
+
+//column
+@mixin flex-column-gap($gap) {
+  display: flex;
+  flex-direction: column;
+  row-gap: $gap;
+}
+
+@mixin flex-col-align($alignItems) {
+  display: flex;
+  flex-direction: column;
+  align-items: $alignItems;
+}
+@mixin flex-column-align-gap($alignItems, $gap) {
+  display: flex;
+  flex-direction: column;
+  align-items: $alignItems;
+  gap: $gap;
+}
+//grid
+@mixin grid-container($rows, $column, $rowwidth, $columnwidth, $gap) {
+  display: grid;
+  grid-template-columns: repeat($column, $columnwidth);
+  grid-template-rows: repeat($rows, $rowwidth);
+  gap: $gap;
+}

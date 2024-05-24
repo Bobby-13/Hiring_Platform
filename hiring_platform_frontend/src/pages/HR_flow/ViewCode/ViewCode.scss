@@ -1,0 +1,10 @@
+.bg-container{
+    display: flex;
+    height: 100vh;
+    // overflow: hidden;
+    .questionSet-container{
+        overflow: auto;
+        width: 90rem;
+
+    }
+}

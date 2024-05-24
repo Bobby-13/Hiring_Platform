@@ -1,0 +1,26 @@
+.optionsChange{
+    display: flex;
+    // gap:2rem;
+    justify-content: space-between;
+    border: 1px gray solid;
+    background-color: rgb(158, 168, 161);
+    .screen{
+    width: 5rem;
+    height: 2rem;
+    }
+}
+.Compailer{
+    width: fit-content;
+}
+.languageSelection{
+    width: 5rem;
+    height: 2rem;
+}
+.compileButtons{
+    width: 5rem;
+    height: 2rem;
+}
+.submitButtons{
+    width: 5rem;
+    height: 2rem;
+}

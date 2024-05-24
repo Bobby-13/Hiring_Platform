@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Divum Hiring Assessment Round Details</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table td {
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul ul {
+            list-style: square;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>Divum Hiring Assessment Round Details</h1>
+    <p>Dear <span th:text="${name}"></span>,</p>
+    <p>This is an auto-generated email containing the details for the upcoming round of the Divum networks hiring assessment.</p>
+    <table>
+        <tbody>
+        <p>URL to login - <a href="www.divum.in">http://www.divum.in</a></p>
+        <p>Your login details are valid from <span th:text="${startTime}">,</span><span th:text="${startDate}">to</span><span th:text="${endTime}">,</span><span th:text="${endDate}"></span></p>
+        <tr>
+            <td>Assessment categories:</td>
+            <td th:text="${categories}"></td>
+        </tr>
+        <tr th:if="${hasChangedPassword == false}">
+            <td colspan="2" style="font-weight: bold; color: red;">Your password is not updated. Update it before this round begins</td>
+            <td style="padding: 5px;">Visit this page to reset the password <a href="">https://www.divum.in</a></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <p><b>Important Information:</b></p>
+
+    <ul>
+        <li>Read the instructions carefully before starting the assessment.</li>
+        <li>Do not copy and paste the username and password. Always type them in manually.</li>
+        <li>Complete the test in one go. It cannot be paused or resumed later.</li>
+        <li>This is a timed test. Manage your time effectively to answer all questions.</li>
+        <li>Answer all questions and complete all modules within the allotted time.</li>
+        <li>You can attempt the test only once.</li>
+        <li><b>For video interviews:</b>
+            <ul>
+                <li><b>Desktop/Laptop Browsers:</b> Google Chrome (50+), Edge (79+), Safari (11+), or Mozilla (50+).</li>
+                <li><b>Mobile Browsers:</b> Google Chrome (50+) on Android and Safari (11+) on iOS.</li>
+                <li><b>Mobile App:</b> Android 5.1 or later and iOS version 10.0 or later.</li>
+                <li>Using Apple AirPods is not recommended.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>We wish you the best of luck in the assessment!</p>
+
+    <p>Sincerely,</p>
+    <p>Team</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.bg-container {
+  display: flex;
+  overflow: hidden;
+  .container-content {
+    height: fit-content;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  .searchbar-container {
+    margin-left: 14rem;
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../../stylesheets/styles";
+@import "../../../stylesheets/mixins.scss";
+
+.head {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  border-radius: 0.3rem;
+  padding: 1.5rem 2rem;
+  gap: 10%;
+  height: 100%;
+  input {
+    border: none;
+    outline: none;
+    border: 1.35px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+  &_details {
+    @include grid-container(1, 2, "", 1fr, 2rem);
+    align-items: center;
+    input{
+      width:6.5rem;
+    }
+  }
+  &_filter {
+    @include flex-column-align-gap(center, 2rem);
+    &_in {
+      @include flex-row-center(2.5rem, center);
+      & > p {
+        font-size: 2.5rem;
+        cursor: pointer;
+      }
+    }
+    &_apply {
+      @include flex-row-coordinate(center, center, 1rem);
+      & input {
+        width: 5rem;
+        align-self: center;
+      }
+    }
+  }
+}

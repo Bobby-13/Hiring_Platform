@@ -1,0 +1,92 @@
+.round-head {
+  margin-top: 2rem;
+  font-size: 20px;
+  margin-bottom: 4rem;
+}
+
+.Edit {
+  width: 20%;
+  min-width: 30px;
+  height: 2rem;
+  background-color: #3f4ae4;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.download-btn-wrapper {
+  display: flex;
+  justify-content: end;
+  margin: 2rem 9rem 2rem 0;
+
+  .download-btn {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #3175F5;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.Delete {
+  width: 20%;
+  min-width: 30px;
+  height: 2rem;
+  background-color: rgb(223, 58, 58);
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+.viewButtonIcon {
+  width: 50%;
+  min-width: 65px;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #3f4ae4;
+  color: white;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.searchbutton {
+  width: 3rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.6rem;
+  margin-right: 7rem;
+  border: none;
+  background-color: #3f4ae4;
+  color: white;
+  cursor: pointer;
+}
+
+.searchinput {
+  width: 100%;
+  height: 2rem;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.searchoption {
+  align-items: center;
+  justify-content: end;
+  height: 2rem;
+  margin-bottom: 2rem;
+}

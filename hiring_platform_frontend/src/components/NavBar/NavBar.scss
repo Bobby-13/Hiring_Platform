@@ -1,0 +1,38 @@
+@import "../../stylesheets/index.scss";
+
+.NavBar {
+  height: 6rem;
+  padding: 0 1rem;
+  background-color: $Primary;
+  @include Flex-Acenter-J(space-between);
+
+  h2 {
+    color: $White;
+    padding-left: 8rem;
+  }
+  .Logo {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .navbarTopRight {
+    display: flex;
+    gap: 20%;
+    padding-right: 2rem;
+  }
+
+  Button {
+    @include NoStyle;
+    height: 2rem;
+    width: 4rem;
+    cursor: pointer;
+    color: $White;
+  }
+
+  .navbarLogin {
+    background: rgb(65, 65, 253);
+    color: $White;
+    border-radius: 0.5rem;
+    width: 8rem;
+  }
+}

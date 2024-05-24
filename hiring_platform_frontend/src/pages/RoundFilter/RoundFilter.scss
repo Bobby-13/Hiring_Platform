@@ -1,0 +1,97 @@
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter {
+  margin-bottom: 10px;
+}
+
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filtered-contests {
+  display: flex;
+  // flex-direction: row-reverse;
+
+  .filter-container {
+        display: flex;
+  }
+  Button {
+    height: 2rem;
+    width: 8rem;
+    margin-left: 75rem;
+    margin-top: -3rem;
+  }
+}
+.Round-header {
+  margin-top: 4rem;
+  margin-bottom: -4rem;
+  margin-left: 4rem;
+  font-size: 2rem;
+}
+.contest {
+  border: 1px solid #ccc;
+  margin-bottom: -3rem;
+  margin-top: 6rem;
+  border-radius: 4px;
+  margin-left: -6rem;
+  padding: 3rem;
+  gap: 7rem;
+  width: 66rem;
+  display: flex;
+
+  p {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+  }
+
+  strong {
+    margin: 0.5rem 0;
+    color:#757575;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+.filtered-contests {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.update-button-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 78rem;
+  margin-top: -43rem;
+  margin-right: 4rem;
+  gap: 12rem;
+  padding-right: 3rem;
+}
+.update-button {
+  background-color: #5962e8;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+p.published {
+  color: green; 
+}
+
+p.pending {
+  color: red; 
+
+}
+.Nodata{
+  font-size: 3rem;
+  margin-left: 36rem;
+  margin-top: 20rem;
+}

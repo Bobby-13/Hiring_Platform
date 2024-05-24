@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question</title>
+</head>
+<body>
+    <div>
+        <p th:text="${codingQuestion}"></p>
+        <p th:text="${explanation}"></p>
+        <img th:if="${image}" th:src="${image}" alt="Explanation Image"/>
+    </div>
+</body>
+</html>

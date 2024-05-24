@@ -1,0 +1,60 @@
+@import "../stylesheets/index.scss";
+
+$Sidebar: #E8E9F2;
+$Primary:#333751;
+
+.side-bar {
+    background-color: $Sidebar;
+    height: 100rem; 
+    width: 24.1875rem;
+    position: fixed;
+}
+.home-bar{
+    background-color: $Primary;
+    height: 2.25rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    padding-left: 7rem;
+    margin-bottom: -3rem;
+    width: 11rem;
+    align-items: center;
+    display: flex;
+    position: relative;
+    border-radius: 0.5rem;
+}
+.contestlog-bar{
+    background-color: #333751;
+    height: 2.25rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    padding-left: 5rem;
+    width: 13rem;
+    align-items: center;
+    display: flex;
+    position: relative;
+    border-radius: 0.5rem;
+}
+.contest-block{
+    background-color: #E8E9F2;
+    height: 5.25rem;
+    color: black;
+    font-weight: bold;
+    margin-top: -7rem;
+    margin-left: 35rem;
+    padding-left: 2rem;
+    width: 49rem;
+    font-size: 1.25rem;
+    align-items: center;
+    display: flex;
+    position: relative;
+    border-radius: 0.5rem;
+
+    .next-icon{
+        margin-left: 36rem;
+        margin-top: 0.25rem;
+    }
+}

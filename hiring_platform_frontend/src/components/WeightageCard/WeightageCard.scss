@@ -1,0 +1,54 @@
+.WeightageCard
+{
+    width:15.563rem;
+    display: flex;
+    border:0.1px solid rgb(211, 210, 210);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    margin-top: 10px;
+    margin-left: 20px;
+    flex-direction: column;
+    padding: 1rem;
+    transition: 0.3s;
+}
+.weightagecount{
+    font-size: 18px;
+}
+.Weightage-content
+{
+    display: flex;
+    gap:2rem;
+    align-items: center;
+    
+}
+.weighttitle{
+    width: 50%;
+    padding: 0.5rem;
+}
+.incdecbutton{
+    display: flex;
+    gap: 0.5rem;
+
+}
+
+.totalvalues{
+display: flex;
+}
+.durationinfo{
+    width: 100%;
+    height: 2rem;
+    padding-left:0.3rem;
+}
+.weightagecount
+{
+    width:5rem;
+}
+.saveroundbutton
+{
+margin-top: 11px;
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+background-color: rgb(65, 104, 210);
+color:white;
+border:none;
+
+}

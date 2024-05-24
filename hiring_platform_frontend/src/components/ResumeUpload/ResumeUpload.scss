@@ -1,0 +1,142 @@
+.maincontainer {
+    background-color: #e8e9f2;
+    color: #000;
+    font-size: 1.49rem;
+    font-weight: 600;
+    padding-top: 2rem;
+    height: 33rem;
+    width: 28rem;
+    border-radius: 1rem;
+    margin-left: 42rem;
+    margin-top: 7rem;
+    text-align: center;
+
+    .name-container {
+        font-size: 20px;
+        padding-top: 2rem;
+        margin-left: 2rem;
+        color: #757575;
+        padding-right: 18rem;
+
+        input {
+            width: 235%;
+            padding: 0.8rem 2.5rem;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 1rem;
+            margin-left: 0.525rem;
+            border-radius: 0.313rem;
+            display: flex;
+            position: relative;
+            padding-right: 2rem;
+            border-width: 0;
+            box-shadow: 0 0 0.625rem rgba(218, 214, 214, 0.83);
+        }
+    }
+
+    .year-container {
+        font-size: 20px;
+        color: #757575;
+        margin-top: -2rem;
+        padding-left: 2rem;
+        display: flex;
+        align-items: center;
+
+        p {
+            display: inline;
+            margin-right: 1rem;
+        }
+        .year-dropdown {
+            width: 71%;
+            padding: 0.725rem;
+            margin-right: 35rem;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 6rem;
+            margin-left: -3.375rem;
+            border-radius: 0.313rem;
+            padding-right: 0rem;
+            border-width: 0;
+            background-color: #fff;
+            box-shadow: 0 0 0.625rem rgba(218, 214, 214, 0.83);
+
+        }
+
+    }
+
+    .resume-container {
+        font-size: 20px;
+        color: #757575;
+        margin-top: 1rem;
+        width: 12rem;
+        padding-left: 1rem;
+        
+
+        p {
+            display: inline;
+            margin-right: 1rem;
+        }
+        .upload-icon{
+            display: flex;
+            padding-left: 9rem;
+            padding-bottom: 1rem;
+        }
+
+        .upload-container {
+            border: 2px dashed #757575;
+            padding: 1rem;
+            margin-left: 2rem;
+            padding-left: 2rem;
+            width: 20rem;
+            height: 7rem;
+            background-color: #fff;
+            margin-top: 1rem;
+            text-align: center;
+            cursor: pointer;
+
+            p {
+                margin: 0;
+            }
+    
+        }
+
+      
+    }
+    .submit{
+    background-color: #606795;
+    height: 2.25rem;
+    width: 127px;
+    color: white;
+    border: none;
+    margin-top: 1.25rem;
+    margin-left: 12px;
+    border-radius: 1.25rem;
+    font-size: 1.125rem;
+    padding-top: 0.03125rem;
+
+    }
+    .dept-container{
+    font-size: 20px;
+    color: #757575;
+    margin-top: 0rem;
+    width: 12rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: -23rem;
+    align-items: center;
+
+      input {
+        width: 235%;
+        width: 114%;
+        padding: 0.8rem 4.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 6rem;
+        margin-left: -4.475rem;
+        border-radius: 0.313rem;
+        display: flex;
+        position: relative;
+        padding-right: 2rem;
+        border-width: 0;
+        box-shadow: 0 0 0.625rem rgba(218, 214, 214, 0.83);
+      } 
+    }
+}

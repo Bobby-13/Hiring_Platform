@@ -1,0 +1,6 @@
+@import "../../../stylesheets/mixins.scss";
+
+.hrassign {
+  padding: 1rem 0.5rem;
+  @include flex-column-gap(2rem);
+}

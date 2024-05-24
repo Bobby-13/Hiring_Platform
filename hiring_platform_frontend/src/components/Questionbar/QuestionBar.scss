@@ -1,0 +1,90 @@
+// QuestionBar.scss
+@import "../../stylesheets/index.scss";
+
+$Sidebar: #E8E9F2;
+$Primary:#E8E9F2;
+$Secondary:#606795;
+
+.side-bar {
+    background-color: $Sidebar;
+    height: 100rem; 
+    width: 24.1875rem;
+    position: fixed;
+}
+
+.button-container,
+.button-container-1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 3.5rem;
+    gap: 0.24rem;
+    
+}
+
+.custom-button,
+.custom-button-1 {
+    width: 65%;
+    height: 2.813rem;
+    border-radius: 0.25rem;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin: 0.313rem;
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+
+.text-1,
+.text-2 {
+    font-size: 1.375rem;
+    font-weight: bold;
+    color: #757575;
+    margin-bottom: 0.938rem;
+    margin-top: 3rem;
+}
+
+.button-text,
+.button-text-1 {
+    font-size: 1rem; // Increase the font size inside the button
+    color: #000; 
+}
+
+.legend {
+    display: flex;
+    flex-direction: column;
+    gap:1.25rem;
+    justify-content: space-between;
+    margin-top: 5rem;
+    padding-left: 5rem;
+    font-size: 1rem;
+    color:#757575;
+    font-weight: 600;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+}
+
+.color-code-606795 {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: #606795;
+    margin-right:0.313rem;
+}
+
+.color-code-BCBADB {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: #BCBADB;
+    margin-right: 0.313rem;
+}
+.color-code-flag{
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: #BCBADB;
+    margin-right: 0.313rem; 
+    border-bottom: 5px solid red;
+}

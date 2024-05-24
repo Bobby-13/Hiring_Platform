@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interview Schedule Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            margin: 10px 0;
+        }
+        .interviewee-details {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <p>Dear <span th:text="${name}"></span>,</p>
+
+    <p>We hope this message finds you well.</p>
+
+    <p>We would like to inform you about the upcoming interviews scheduled with the following candidates:</p>
+
+    <div th:each="details : ${intervieweeDetailsList}">
+        <div class="interviewee-details">
+            <p>Interviewee: <span th:text="${details.name}"></span></p>
+            <p>Interview Time: <span th:text="${details.interviewTime}"></span></p>
+            <br/>
+        </div>
+    </div>
+
+    <p>Please make sure to be available for the interviews at the specified times. If you have any conflicts or need to reschedule, kindly let us know as soon as possible.</p>
+
+    <p>Thank you for your cooperation.</p>
+
+    <p>Best regards,<br>DIVUM</p>
+</div>
+</body>
+</html>

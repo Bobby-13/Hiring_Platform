@@ -1,0 +1,11 @@
+@import "../../../../stylesheets/mixins.scss";
+
+.schedule_content {
+  &_value {
+    @include flex-column-gap(1.3rem);
+    & > div {
+      width: 60%;
+      justify-content: space-between;
+    }
+  }
+}

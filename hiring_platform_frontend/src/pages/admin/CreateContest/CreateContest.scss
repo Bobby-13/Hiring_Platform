@@ -1,0 +1,41 @@
+.createContainer{
+     position: relative;
+     .headingProgress {
+          background-color: rgb(245, 243, 243);
+          padding: 2rem;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          .progressInCreateContest {
+               display: flex;
+               justify-content: center;
+               margin-top: 2rem;
+          }
+     }
+     .nextbackbuttons
+     {
+          display: flex;
+          position: fixed;
+          right: 0;
+          bottom: 0;
+          margin-bottom: 2rem;
+          .navigationButton {
+               width: 15rem;
+               background: none ;
+               height: 2.4rem;
+               border: none;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               gap: 2rem;
+               border-radius: 0.5rem;
+               font-size: 1.5rem;
+               cursor: pointer; 
+                 
+          }   
+          .navigationButton:hover{
+               color: rgb(81, 182, 65);
+          }
+          }
+}
+

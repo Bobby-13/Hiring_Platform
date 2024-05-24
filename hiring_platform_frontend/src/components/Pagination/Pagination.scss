@@ -1,0 +1,56 @@
+@import "../../stylesheets/index.scss";
+
+.pagination {
+  // padding: .5rem;
+  width: 950px;
+  overflow: scroll;
+  height: 3rem;
+  display: flex;
+  // align-items: center;
+  // justify-content: center;
+  margin : 2.7rem .2rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  .page-num {
+    padding: 8px 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 0 2px;
+    font-size: 1rem;
+
+    &.active {
+      background: $Black;
+      color: #fff;
+      border-color: $Black;
+    }
+
+    &:hover {
+      background: #eee;
+      color: $Black;
+      cursor: pointer;
+    }
+  }
+
+  .page-arrow {
+    background: $Black;
+    color: #fff;
+    border: none;
+    height: 36px;
+    font-size: 1.2rem;
+    min-width: 36px;
+    margin: 0.4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:disabled {
+      background: #eee;
+      color: #555;
+      cursor: not-allowed;
+    }
+  }
+}

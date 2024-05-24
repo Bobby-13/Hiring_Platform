@@ -1,0 +1,22 @@
+.topstatus{
+    display: flex;
+    justify-content: space-between;
+    width: 40rem;
+}
+.topemail{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.roundbutton{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    button{
+        width: 8rem;
+        border-right: none;
+    }
+}
+.barchart{
+     margin-top: 2rem;
+}

@@ -1,0 +1,125 @@
+//row
+.flex-row {
+  display: flex;
+}
+//row align
+.flex-align-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-align-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+//row justify content
+
+.flex-justify-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-justify-around {
+  display: flex;
+  justify-content: space-around;
+}
+.flex-justify-even {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flex-justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-center-gap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+}
+//column
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+//column align
+.flex-column-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-column-end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+// column justify content
+
+.flex-column-justify-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.flex-column-justify-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-column-justify-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-column-justify-around {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.flex-column-justify-even {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.flex-column-justify-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.btn-flex-end-gap-m-1 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin: 0 1rem;
+}

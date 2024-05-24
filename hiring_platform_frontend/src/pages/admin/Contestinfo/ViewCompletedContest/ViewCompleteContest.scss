@@ -1,0 +1,33 @@
+.viewContestSwitch {
+  font-size: 20px;
+}
+.viewCompleted {
+  padding: 0 2rem;
+}
+.contestnameParticipant {
+  margin-top: 2rem;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: rgba(66, 65, 65, 0.933);
+}
+span {
+  font-weight: bold;
+}
+.viewCompletetogglebutton{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    button{
+        width: 10rem;
+    }
+}
+.participantspage{
+  margin-top: 6rem;
+}
+.roundinfo{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}

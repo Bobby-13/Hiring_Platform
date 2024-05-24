@@ -1,0 +1,21 @@
+.holeProgressContainer{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  .ProgressContainer{
+    display: flex;
+    align-items: center;
+    .circleValue{
+      width: 3rem;
+      height: 3rem;
+      border-radius: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+    }
+    .circleLine{
+      width: 10rem;
+      height: 0.4rem;
+    }
+  }
+}

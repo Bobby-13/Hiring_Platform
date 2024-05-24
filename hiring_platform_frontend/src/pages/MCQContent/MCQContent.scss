@@ -1,0 +1,15 @@
+.MCQContent
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 18px;
+  margin-top:20px;
+ 
+}
+.countContent{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}

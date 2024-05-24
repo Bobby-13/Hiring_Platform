@@ -1,0 +1,70 @@
+@import "../../stylesheets/index.scss";
+
+.Filter {
+  display: flex;
+  height: 1.7rem;
+  margin: 1rem;
+
+  .Filtericon {
+    // border: 1px solid black;
+    height: 2.7rem;
+    width: 3rem;
+    @include Flex-Jcenter-Acenter();
+    font-size: 1.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .FilterPopup {
+    position: relative;
+    top: 3rem;
+    width: 14rem;
+    min-height: fit-content;
+    max-height: 20rem;
+    height: fit-content;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+
+    div {
+      margin-bottom: 5px;
+
+      input[type="checkbox"] {
+        margin-right: 5px;
+        cursor: pointer;
+      }
+    }
+    hr {
+      margin: 0.5rem 0;
+    }
+    .buttonContainer {
+      display: flex;
+      justify-content: flex-end;
+      .clearButton {
+        @include NoStyle;
+        width: 4.5rem;
+        height: 1.7rem;
+        background-color: gray;
+        color: $White;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 6px;
+      }
+    }
+    .applyButton {
+      @include NoStyle;
+      position: relative;
+      left: 5rem;
+      width: 3.5rem;
+      height: 2rem;
+      background-color: blue;
+      color: $White;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+  }
+}

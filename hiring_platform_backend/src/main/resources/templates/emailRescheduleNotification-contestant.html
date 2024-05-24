@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Interview Rescheduled</title>
+</head>
+<body>
+<p th:if="${recipientType eq 'contestant'}">Dear Contestant,</p>
+<p th:if="${recipientType eq 'employee'}">Dear Employee,</p>
+
+<p>Your interview has been rescheduled. Please check your updated interview details:</p>
+
+<p><strong>New Interview Time:</strong> <span th:text="${interviewTime}"></span></p>
+
+<p>Best regards,<br/>The Hiring Platform Team</p>
+</body>
+</html>

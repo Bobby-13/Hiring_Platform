@@ -1,0 +1,22 @@
+@import "../../stylesheets/index.scss";
+.Footer {
+  height: 20rem;
+  background-color: beige;
+  @include Flex-Jcenter;
+  gap: 6%;
+  padding: 2rem;
+
+  .footerSection {
+    @include Flex-Column;
+    gap: 1rem;
+    width: 8.5rem;
+    line-height: 1.7rem;
+  }
+
+  p {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

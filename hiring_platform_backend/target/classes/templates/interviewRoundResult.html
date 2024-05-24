@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Interview Result Notification</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            line-height: 1.5;
+        }
+        .passed {
+            color: green;
+        }
+        .not-passed {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>Dear <span th:text="${name}">, </span></h1>
+<p>
+    This email is to inform you about the outcome of your recent interview.
+</p>
+<p>
+        <span th:if="${isPassed}">
+            We are pleased to inform you that you have successfully passed the last round of the interview process. Congratulations!
+            <br>
+            Information regarding the next round will be shared with you soon.
+        </span>
+    <span th:unless="${isPassed}">
+            We regret to inform you that you were not selected to move forward with the interview process at this time.
+            <br>
+            Thank you for your interest in Divum. We wish you the best of luck in your future endeavors.
+        </span>
+</p>
+<p>
+    Sincerely,
+    <br>
+    The Divum Hiring Team
+</p>
+</body>
+</html>

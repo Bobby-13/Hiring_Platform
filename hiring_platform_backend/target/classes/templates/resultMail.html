@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Round Result</title>
+</head>
+<body>
+<div>
+    <h1>Round Result</h1>
+    <p>Dear, <span th:text="${name}"></span></p>
+    <div th:if="${isPassed}">
+        <p>
+            Congratulations! You have passed the round.
+        </p>
+        <div th:if="${isNextRoundIsInterview}">
+            <p>Next rounds will be interviews. Be prepared! The interview time will be shared with you soon.</p>
+        </div>
+        <div th:unless="${isNextRoundIsInterview}">
+            <p>URL to login - <a href="www.divum.in">http://www.divum.in</a></p>
+            <p>Your login details are valid from <span th:text="${startTime}"></span>, <span th:text="${startDate}"></span> to <span th:text="${endTime}"></span>, <span th:text="${endDate}"></span></p>
+            <table>
+                <tbody>
+                <tr>
+                    <td>Assessment categories:</td>
+                    <td th:text="${categories}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <p th:unless="${isPassed}">
+        Unfortunately, you did not pass this round. Please try again in the next opportunity.
+    </p>
+</div>
+</body>
+</html>

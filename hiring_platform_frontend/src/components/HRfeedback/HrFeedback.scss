@@ -1,0 +1,125 @@
+@import "../../stylesheets/index.scss";
+
+.hr-container {
+  background-color: #e8e9f2;
+  color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  height: 45rem;
+  width: 58rem;
+  border-radius: 1rem;
+  margin-left: 31rem;
+  margin-top: 6rem;
+  text-align: center;
+}
+.name-container {
+  font-size: 20px;
+  padding-top: 1rem;
+  margin-left: 3rem;
+  color: #757575;
+  padding-right: 50rem;
+
+  input {
+    width: 21rem;
+    padding: 0.6rem 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    margin-left: 0.525rem;
+    border-radius: 0.313rem;
+    display: flex;
+    position: relative;
+    padding-right: 2rem;
+    border-width: 0;
+    box-shadow: 0 0 0.625rem rgba(218, 214, 214, 0.83);
+  }
+}
+.comment-container {
+  font-size: 20px;
+  padding-top: 1rem;
+  margin-left: 3rem;
+  color: #757575;
+  padding-right: 50rem;
+
+  input {
+    width: 46rem;
+    font-size: 1rem;
+    height: 10rem;
+    padding: 0.8rem 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1rem;
+    margin-left: 0.525rem;
+    border-radius: 0.313rem;
+    display: flex;
+    position: relative;
+    padding-right: 2rem;
+    border-width: 0;
+    box-shadow: 0 0 0.625rem rgba(218, 214, 214, 0.83);
+  }
+}
+.submit {
+  background-color: #606795;
+  height: 2.25rem;
+  width: 127px;
+  color: white;
+  border: none;
+  margin-top: 1rem;
+  margin-left: -11px;
+  border-radius: 1.25rem;
+  font-size: 1.125rem;
+  padding-top: 0.03125rem;
+}
+.date-container {
+  font-size: 20px;
+  width: 68rem;
+  padding-top: 2rem;
+  margin-left: 3rem;
+  color: #757575;
+  padding-right: 50rem;
+
+  input {
+    width: 21rem;
+    padding: 0.8rem 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1rem;
+    margin-left: 0.525rem;
+    border-radius: 0.313rem;
+    display: flex;
+    font-size: 1rem;
+    position: relative;
+    padding-right: 2rem;
+    border-width: 0;
+    box-shadow: 0 0 0.625rem rgba(218, 214, 214, 0.83);
+  }
+}
+.feedback-header {
+  font-size: 1.4rem;
+  color: #757575;
+}
+.feedback-containers {
+  font-size: 20px;
+  width: 8rem;
+  padding-top: 1rem;
+  margin-left: 3rem;
+  color: #757575;
+  padding-right: 50rem;
+
+  label {
+    display: flex;
+    width: 13rem;
+    padding-top: 1rem;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.person-icon {
+  height: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+  position: relative;
+  margin-left: 4rem;
+  margin-top: -2rem;
+  color: #757575;
+}

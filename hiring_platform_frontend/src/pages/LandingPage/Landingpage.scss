@@ -1,0 +1,75 @@
+@import "../../stylesheets/index.scss";
+
+.Landingpage {
+  height: 100vh;
+  width: 100%;
+  @include Flex-Column;
+  .LandingpageBanner {
+    height: 34rem;
+    background: $Secondary;
+    @include Flex-JC(space-between);
+    padding: 6rem;
+    padding-left: 1rem;
+    gap: 15%;
+
+    h1 {
+      font-size: 3rem;
+      width: 30%;
+      margin-left: 10%;
+    }
+    .BannerColoredText {
+      color: $Blue;
+    }
+    .BannerImage {
+      height: 28rem;
+      width: 30%;
+    }
+    .container {
+      @include Flex-Jcenter;
+      gap: 25%;
+    }
+  }
+
+  .AboutSection {
+    padding: 2rem 15rem;
+
+    h1 {
+      @include Flex-Jcenter;
+      padding-bottom: 1rem;
+    }
+    p {
+      text-align: justify;
+    }
+    .AboutSectionContainer {
+      padding-bottom: 1.9rem;
+    }
+  }
+
+  .TechnologySection {
+    height: 25rem;
+    padding: 0 0 3rem 0;
+    h1 {
+      @include Flex-Jcenter;
+      padding-bottom: 2.2rem;
+    }
+
+    .TechList {
+      height: 9rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .TechIconSection {
+      @include Flex-Jcenter-Acenter(row);
+      gap: 5%;
+      width: 75%;
+    }
+
+    .TechIcons {
+      @include Flex-Jcenter-Acenter(column);
+    }
+
+    .TechnologyContainer {
+      @include Flex-Jcenter-Acenter(column);
+    }
+  }
+}

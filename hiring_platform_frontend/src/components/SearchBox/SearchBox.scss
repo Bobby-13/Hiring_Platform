@@ -1,0 +1,48 @@
+@import "../../stylesheets/index.scss";
+
+.searchBox {
+  height: fit-content;
+  min-width: 18rem;
+  max-width: 18rem;
+  position: relative;
+  border: 1px solid $Black;
+  border-radius: 18px;
+  border: 1px solid #ccc;
+
+  .searchBar {
+    @include NoStyle;
+    padding: 1rem 3.2rem 1rem 1rem;
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+  .searchIcon {
+    @include NoStyle;
+    height: 2.5rem;
+    width: 2.7rem;
+    font-size: 1rem;
+    position: absolute;
+    right: 0;
+    background-color: $Blue;
+    color: $White;
+    border-radius: 17px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+  }
+
+  .suggestionsContainer {
+    height: auto;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    list-style-type: none;
+    li {
+      border: 0.5px solid black;
+      height: 1.8rem;
+      &:hover, &:focus {
+        cursor: pointer;
+      }
+    }
+  }
+}

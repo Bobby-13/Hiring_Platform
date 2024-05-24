@@ -1,0 +1,15 @@
+@import "../../../../stylesheets/styles";
+@import "../../../../stylesheets/mixins.scss";
+
+.status_card {
+  border: 1px solid black;
+  padding: 0.8rem;
+  &_content_box {
+    @include flex-row-coordinate(center, space-between, 1.5rem);
+    width: 100%;
+  }
+  &_button {
+    padding-top: 1rem;
+    @include flex-row-center(2rem, center);
+  }
+}

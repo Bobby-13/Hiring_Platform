@@ -1,0 +1,47 @@
+@import "../../../stylesheets/mixins.scss";
+
+.modal {
+  @include flex-row(center, center);
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  & input{
+    outline: none;
+  }
+  & .cross_icon {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+    font-weight: 100;
+    color: rgb(95, 95, 95);
+    cursor: pointer;
+  }
+  &_pop {
+    @include flex-column-align-gap(flex-start, 2.5rem);
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    padding: 2.5rem;
+    h2 {
+      line-height: 0;
+    }
+    &_form {
+      @include flex-column-gap(1rem);
+      & > div {
+        @include flex-row(center, space-between);
+        min-width: fit-content;
+        width: 25rem;
+        input {
+          padding: 0.3rem 0 0.3rem 0.3rem;
+          border-radius: 0.2rem;
+          border: 1px solid rgb(160, 159, 159);
+        }
+      }
+    }
+    &_button {
+      @include flex-row(center, space-around);
+      width: 100%;
+      align-self: center;
+    }
+  }
+}

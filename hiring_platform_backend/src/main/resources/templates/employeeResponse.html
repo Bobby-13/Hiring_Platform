@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee One-on-One Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .button-container a {
+            text-decoration: none;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        .button-container button.accept {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .button-container button.reject {
+            background-color: #f44336;
+            color: white;
+        }
+        .button-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<p>Hello, <span th:text="${employeeName}"></span>!</p>
+<p>You have a request for a one-on-one session. Please respond by clicking one of the following buttons:</p>
+<div class="button-container">
+    <a th:href="${acceptLink}" class="accept">
+        <button class="accept">Accept</button>
+    </a>
+    <a th:href="${rejectLink}" class="reject">
+        <button class="reject">Reject</button>
+    </a>
+</div>
+</body>
+</html>

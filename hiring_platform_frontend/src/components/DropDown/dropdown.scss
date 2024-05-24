@@ -1,0 +1,27 @@
+@import "../../stylesheets/index.scss";
+
+.dropdown {
+  margin-top: 1.2rem;
+  margin-left: 2rem;
+  height: 6rem;
+  width: 12rem;
+  @include Flex-Jcenter-Acenter;
+  // border: 1px solid red;
+}
+
+.dropdown select {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 10rem;
+}
+
+.dropdown select option:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.dropdown p {
+  margin-top: 8px;
+  font-size: 0.8rem;
+}

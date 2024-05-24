@@ -1,0 +1,89 @@
+@import "../../../stylesheets/index.scss";
+
+.RoundFilerDetails {
+    padding: 1rem;
+  .RoundFilerDetailsTopContainer {
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    .RoundFilerDetailsTopContent {
+      p {
+        margin-bottom: 1rem;
+        margin: 0.3rem 0.5rem;
+        width: 18rem;
+        display: flex;
+        align-items: center;
+        text-align: start;
+        font-size: 1.4rem;      }
+      span {
+        margin: 0.5rem 1rem;
+      }
+    }
+  }
+  .tableContainer {
+    h1{
+        margin-bottom: 1rem;
+    }
+    p{
+      margin-left: 41rem;
+      margin-top: 14rem;
+      font-size: 2rem;
+    }
+  }
+}
+.RoundFilerDetailsTopContentRight {
+   width: 20rem;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+    margin-top: -9rem;
+    margin-left: 25rem;
+
+  Button {
+    @include NoStyle;
+    width: 4.5rem;
+    height: 2rem;
+    border-radius: 7px;
+    font-size: 1rem;
+    color: white;
+    background-color: #0A84FF;
+  }
+  .RoundFilterRadioButtons {
+    display: flex;
+    gap: 10%;
+    padding: 0.3rem;
+    margin-bottom: 1.3rem;
+    label {
+      padding: 0.3rem;
+      font-size: 1.2rem;
+    }
+  }
+  .RoundFilterInputField {
+    display: flex;
+    gap: 5%;
+    input {
+      padding: 0.5rem;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    Button {
+      @include NoStyle;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 7px;
+      font-size: 2rem;
+      color: white;
+      margin-top: 0.2rem;
+    }
+    .plus {
+      background-color: #0A84FF;
+    }
+    .minus {
+      background-color: gray;
+    }
+  }
+}

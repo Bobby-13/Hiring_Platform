@@ -1,0 +1,20 @@
+@import "../../../stylesheets/variable.scss";
+@import "../../../stylesheets/mixins.scss";
+
+.contest_display {
+  @include flex-column-gap(2rem);
+  &_details {
+    @include flex-row-coordinate(center, space-around, 2rem);
+    &_box {
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0px 0px 3px rgba(black, 0.7);
+      width: 70%;
+      cursor: pointer;
+      transition: box-shadow 0.15s;
+    }
+    &_box:hover {
+      box-shadow: 0px 0px 5px rgba(black, 0.9);
+    }
+  }
+}

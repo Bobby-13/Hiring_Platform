@@ -1,0 +1,89 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enabled: true
+            required: true
+  datasource:
+    url: jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}
+    username : ${DB_USERNAME}
+    password : ${DB_PASSWORD}
+    jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  data:
+    mongodb:
+      database: ${MONGO_DATABASE}
+      uri: ${MONGO_DB_URL}
+    redis:
+      port: ${REDIS_PORT}
+      host: ${REDIS_HOST}
+    security:
+      oauth2:
+        client:
+          registration:
+            client-id: ${CLIENT_ID}
+            client-secret: ${CLIENT_SECRET}
+  servlet:
+    multipart:
+      enabled: true
+server:
+  port: ${PORT}
+  address: 0.0.0.0
+
+
+Cors :
+  allowed-origins: ${ALLOWED_ORIGIN}
+
+email :
+  link :
+    employee-availability: "http://192.168.0.231:3000/hr/availabilitycheck"
+    password-reset: "http://192.168.0.231:3000/hr/resetpassword"
+  task :
+    round :
+      first :
+        welcome : 12 # in hours
+        start : 30  # in minutes
+      result : 30  # in minutes
+  sender : ${SENDER_MAIL}
+  template:
+    welcome-email: roundEmailNotification.html
+    first-round-mail: roundMail.html
+    result-mail: resultMail.html
+    response-mail: employeeResponse.html
+    employee-interview-notification: employeeInterviewNotification.html
+    interview-reschedule-contestant: emailRescheduleNotification-contestant.html
+    interview-result: interviewRoundResult.html
+
+
+jwt:
+  secret: ${JWT_SECRET}
+  employee-availability:
+    expiration-time: ${AVAIL_EXP_TIME}
+  password-reset: ${PASSWORD_RESET_EXP_TIME}
+
+getLanguagesUrl: http://192.168.1.155:8080/api/v2/languages
+compileUrl: http://192.168.1.155:8080/api/v2/compile/
+submitUrl: http://192.168.1.155:8080/api/v2/submit/
+getDraftCodeUrl: http://192.168.1.155:8080/api/v2/draftCode/
+codingQuestionForRoundUrl: http://192.168.1.155:8080/api/v2/codingQuestion/
+default:
+  password : ${DEFAULT_PASSWORD}
+
+scheduler :
+  fixed-rate : ${SCHEDULER_FIXED_RATE}
+
+
+
+

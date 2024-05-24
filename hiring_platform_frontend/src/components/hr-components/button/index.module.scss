@@ -1,0 +1,80 @@
+@import '../../../stylesheets/variable.scss';
+
+%button-style {
+  gap: 0.4rem;
+  padding: 0.41rem 0.7rem;
+  color: $White;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: box-shadow 0.15s, background-color 0.15s, color 0.15s;
+}
+
+.button_component {
+  background-color: $admin-primary;
+  @extend %button-style;
+}
+
+.button_component:hover {
+  box-shadow: 0 0 8px rgba($admin-primary, 1);
+  background-color: $White;
+  color: $admin-primary;
+}
+
+.button_component:active {
+  background-color: $admin-primary;
+  color: $White;
+}
+
+.button_component_red {
+  background-color: $red;
+  @extend %button-style;
+}
+
+.button_component_red:hover {
+  box-shadow: 0 0 8px rgba($red, 1);
+  background-color: $White;
+  color: $red;
+}
+
+.button_component_red:active {
+  background-color: $red;
+  color: $White;
+}
+.button_component_green {
+  background-color: $Green-Button;
+  @extend %button-style;
+}
+
+.button_component_green:hover {
+  box-shadow: 0 0 8px rgba($Green-Button, 1);
+  background-color: $White;
+  color: rgba($Green-Button, 1);
+}
+
+.button_component_green:active {
+  background-color: $Green-Button;
+  color: $White;
+}
+
+.button_component_yellow {
+  background-color: $yellow;
+  @extend %button-style;
+  color: $lightBlackText;
+  cursor: default;
+}
+
+.button_component_icon {
+  border: none;
+  background-color: transparent;
+  align-self: center;
+  font-size: 1.5rem;
+  color: rgba($admin-primary, 1);
+  cursor: pointer;
+}
+.button_component_green_static {
+  background-color: $Green-Button;
+  @extend %button-style;
+  cursor: default;
+}

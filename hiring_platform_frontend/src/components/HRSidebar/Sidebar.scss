@@ -1,0 +1,38 @@
+$Primary: #333751;
+$Secondary: #858cbc;
+$Sidebar: #e8e9f2;
+
+.sidebar-conatiner {
+  background-color: $Sidebar;
+  height: 100rem;
+  margin-top: -2rem;
+  width: 28.1875rem;
+
+  .sidebarButtonContainer {
+    padding: 4rem 0;
+    margin-left: 1rem;
+  }
+  .sidebar-content {
+    color: white;
+    display: list-item;
+    font-weight: bold;
+    font-size: 1.25rem;
+    background-color: $Primary;
+    margin: 2rem 1.5rem;
+    height: 3.125rem;
+    width: 23.75rem;
+    cursor: pointer;
+  }
+  .back-button {
+    margin-top: 1rem;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  a,
+  button {
+    text-decoration: none;
+    border: none;
+  }
+}

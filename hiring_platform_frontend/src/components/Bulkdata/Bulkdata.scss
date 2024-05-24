@@ -1,0 +1,48 @@
+.uploadContainer {
+    border: 1.5px black dashed;
+    width: 40rem;
+.uploadContainer {
+    width: 50rem;
+    width: 50rem;
+    height: 20rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 2000;
+    border: 1px dashed gray;
+
+    .fileimg {
+        width: 10px;
+    }
+    .fileupload {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .fileupload::-webkit-file-upload-button {
+        visibility: hidden; 
+        visibility: hidden; 
+    }
+
+    .uploadicons {
+        font-size: 8rem;
+    }
+}
+
+.uploadbuttonContainer {
+    display: flex;
+    justify-content: right;
+    margin-top: 2rem;
+
+    .uploadbutton {
+        width: 10rem;
+        height: 2rem;
+        color: white;
+        background-color: #5962E8;
+        border: none;
+    }
+}
+}

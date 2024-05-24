@@ -1,0 +1,23 @@
+@import "../../../../stylesheets/styles";
+
+.search_component {
+  font-size: 14px;
+  height: 100%;
+  input {
+    height: 100%;
+    border-radius: 5px;
+    border-style: solid;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: none;
+    padding: 0.1rem 0 0.1rem 0.5rem;
+  }
+  .search_icon {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    height: 100%;
+    padding: 0.3rem;
+    margin-left: -1.5rem;
+  }
+}

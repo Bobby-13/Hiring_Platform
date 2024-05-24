@@ -1,0 +1,15 @@
+@import "../../../stylesheets/mixins.scss";
+
+.rescheduling_page {
+  @include flex-column-align-gap(flex-start, 2rem);
+  height: 100vh;
+  padding: 2rem;
+  &_content {
+    height: 100%;
+    width: 100%;
+  }
+  & > button {
+    align-self: flex-end;
+    padding: 0.6rem 1rem;
+  }
+}

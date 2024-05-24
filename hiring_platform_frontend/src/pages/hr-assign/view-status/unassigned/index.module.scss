@@ -1,0 +1,26 @@
+@import "../../../../stylesheets/mixins.scss";
+
+.unassigned {
+  @include flex-column-gap(1.3rem);
+  height: 100%;
+  &_body {
+    @include flex-gap(2rem);
+    padding: 0.15rem;
+    overflow-y: hidden;
+    &_table {
+      flex: 1;
+      min-width: 40%;
+    }
+    &_hrdetails {
+      flex: 4;
+      height: 100%;
+      overflow-y: hidden;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      padding: 1rem;
+    }
+  }
+  &_generate_button {
+    @include flex-row-coordinate(center, flex-end, 2rem);
+  }
+}
